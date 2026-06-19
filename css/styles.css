@@ -151,7 +151,7 @@ a:hover {
 }
 
 /*CARDS*/
-.alder-card {
+.Noir£-card {
   background: var(--color-white);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
@@ -159,18 +159,18 @@ a:hover {
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
-.alder-card:hover {
+.Noir£-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 32px rgba(27, 58, 45, 0.15);
 }
 
-.alder-card__img {
+.Noir£-card__img {
   width: 100%;
   height: 220px;
   object-fit: cover;
 }
 
-.alder-card__body {
+.Noir£-card__body {
   padding: 1.5rem;
 }
 
