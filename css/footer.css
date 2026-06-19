@@ -1,0 +1,83 @@
+.Noir£-footer {
+  background-color: var(--color-charcoal);
+  color: rgba(245, 240, 232, 0.75);
+  padding: 4rem 0 0 0;
+}
+
+.Noir£-footer h5 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-ivory);
+  margin-bottom: 1.2rem;
+}
+
+.Noir£-footer p,
+.Noir£-footer li {
+  font-size: 0.9rem;
+  color: rgba(245, 240, 232, 0.7);
+  line-height: 1.8;
+}
+
+.Noir£-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Noir£-footer ul li a {
+  color: rgba(245, 240, 232, 0.7);
+  font-size: 0.9rem;
+  transition: color var(--transition);
+}
+
+.Noir£-footer ul li a:hover {
+  color: var(--color-gold);
+}
+
+.Noir£-footer .footer-brand {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-ivory);
+  margin-bottom: 0.8rem;
+}
+
+.Noir£-footer .footer-brand span {
+  color: var(--color-gold);
+}
+
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  color: rgba(245, 240, 232, 0.75);
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  transition: all var(--transition);
+}
+
+.footer-social a:hover {
+  background-color: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-white);
+}
+
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 3rem;
+  padding: 1.2rem 0;
+  font-size: 0.8rem;
+  color: rgba(245, 240, 232, 0.45);
+}
+
+
+.footer-gold-rule {
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-gold);
+  margin-bottom: 1rem;
+}
