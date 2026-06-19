@@ -1,0 +1,234 @@
+.hero {
+  position: relative;
+  min-height: 92vh;
+  /* Gradient placeholder simulating a hotel photo */
+  background: linear-gradient(
+      135deg,
+      #1b3a2d 0%,
+      #2d5a43 40%,
+      #3d7a60 70%,
+      #1b3a2d 100%
+    );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay so text is always readable over any background image */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 22, 16, 0.55);
+}
+
+.hero__content {
+  position: relative; /* sits above the overlay */
+  z-index: 2;
+  padding: 2rem 1rem;
+  max-width: 700px;
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  color: var(--color-ivory);
+  margin-bottom: 1rem;
+}
+
+.hero__title em {
+  color: var(--color-gold);
+  font-style: italic;
+}
+
+.hero__subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: rgba(245, 240, 232, 0.85);
+  margin-bottom: 2rem;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Animated scroll hint arrow at the bottom of the hero */
+.hero__scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.hero__scroll-hint span {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-right: 2px solid var(--color-gold);
+  border-bottom: 2px solid var(--color-gold);
+  transform: rotate(45deg);
+  animation: scrollBounce 1.4s infinite;
+  margin: auto;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: rotate(45deg) translateY(0); opacity: 1; }
+  50%       { transform: rotate(45deg) translateY(6px); opacity: 0.5; }
+}
+
+.booking-form__label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(245, 240, 232, 0.7);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.booking-form__input {
+  border-radius: 2px;
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  background-color: rgba(255, 255, 255, 0.07);
+  color: var(--color-ivory);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+}
+
+/* Make date input text visible on dark background */
+.booking-form__input::-webkit-calendar-picker-indicator {
+  filter: invert(0.85);
+}
+
+.booking-form__input:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.2);
+  color: var(--color-ivory);
+  outline: none;
+}
+
+/* Make select option text dark so it's readable in browser dropdowns */
+.booking-form__input option {
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
+}
+
+.welcome-img-wrap {
+  position: relative;
+  height: 420px;
+}
+
+.welcome-img {
+  position: absolute;
+  border-radius: var(--radius-card);
+}
+
+.welcome-img--main {
+  width: 80%;
+  height: 360px;
+  right: 0;
+  top: 0;
+  background: linear-gradient(145deg, var(--color-forest), var(--color-sage));
+}
+
+.welcome-img--accent {
+  width: 50%;
+  height: 200px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(145deg, var(--color-gold), #e8c96a);
+  opacity: 0.6;
+}
+
+.room-card__img {
+  height: 220px;
+  width: 100%;
+}
+
+.room-card__img--classic {
+  background: linear-gradient(135deg, #4a7a5e, #8faf93);
+}
+
+.room-card__img--deluxe {
+  background: linear-gradient(135deg, #1b3a2d, #4a7a5e);
+}
+
+.room-card__img--suite {
+  background: linear-gradient(135deg, #c9a84c, #e8c96a);
+}
+
+.room-badge {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.amenity-icon {
+  font-size: 2rem;
+  color: var(--color-gold);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.amenity-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(245, 240, 232, 0.85);
+  letter-spacing: 0.04em;
+}
+
+.testimonial-card {
+  max-width: 620px;
+  padding: 2.5rem;
+  background: var(--color-white);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.testimonial-stars {
+  color: var(--color-gold);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.testimonial-quote {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--color-forest);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  border: none;
+  padding: 0;
+}
+
+.testimonial-author {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+/* Override Bootstrap carousel controls for dark/light conflict */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  opacity: 0.6;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
