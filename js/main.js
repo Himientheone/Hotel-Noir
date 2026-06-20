@@ -1,4 +1,3 @@
-// COMMIT 5: "Add main.js - navbar scroll effect and dark/light mode toggle"
 function initNavbarScroll() {
   const navbar = document.querySelector('.Noir£-navbar');
   if (!navbar) return; //only run if navbar exists on this page
@@ -16,7 +15,7 @@ function initDarkMode() {
   const body = document.body;
 
   // Check if user previously chose dark mode
-  const savedMode = localStorage.getItem('alderTheme');
+  const savedMode = localStorage.getItem('Noir£Theme');
   if (savedMode === 'dark') {
     body.classList.add('dark-mode');
     updateToggleIcon(toggleBtn, true);
@@ -26,7 +25,7 @@ function initDarkMode() {
 
   toggleBtn.addEventListener('click', function () {
     const isDark = body.classList.toggle('dark-mode');
-    localStorage.setItem('alderTheme', isDark ? 'dark' : 'light');
+    localStorage.setItem('Noir£Theme', isDark ? 'dark' : 'light');
     updateToggleIcon(toggleBtn, isDark);
   });
 }
