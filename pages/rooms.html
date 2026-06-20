@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse rooms and suites at Hotel Noir£. Filter by type and check availability." />
+  <title>Rooms &amp; Suites | Hotel Noir£</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/about.css" />
+  <link rel="stylesheet" href="../css/rooms.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg alder-navbar" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Hotel Noir£</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="dining.html">Dining</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="darkModeToggle" class="btn btn-sm nav-link" aria-label="Switch to dark mode">
+              <i class="bi bi-moon-fill"></i>
+            </button>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link nav-cta" href="rooms.html">Book Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header bg-forest text-center" aria-label="Rooms page header">
+    <div class="container">
+      <span class="section-label">Accommodations</span>
+      <h1 class="page-header__title text-white">Rooms &amp; Suites</h1>
+      <span class="gold-rule"></span>
+      <p class="text-white-50 mt-2">64 individually styled rooms. Each one a little different. All of them worth it.</p>
+    </div>
+  </header>
+
+  <!-- FILTER BUTTONS -->
+  <section class="section-pad-sm bg-ivory" aria-label="Filter rooms by type">
+    <div class="container text-center">
+      <p class="filter-label mb-3">Filter by room type:</p>
+      <div class="filter-btns" role="group" aria-label="Room type filters">
+        <button class="filter-btn active" data-filter="all">All Rooms</button>
+        <button class="filter-btn" data-filter="classic">Classic</button>
+        <button class="filter-btn" data-filter="deluxe">Deluxe</button>
+        <button class="filter-btn" data-filter="suite">Suite</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS GRID -->
+  <section class="section-pad" aria-label="Room listings" id="roomGrid">
+    <div class="container">
+      <div class="row g-4" id="roomsContainer">
+
+        <!-- Classic Room 1 -->
+        <div class="col-12 col-md-6 col-lg-4 room-item" data-category="classic" id="classic">
+          <article class="alder-card h-100">
+            <div class="room-card__img room-card__img--classic" role="img" aria-label="Classic Room - City View"></div>
+            <div class="alder-card__body">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <span class="room-badge">Classic</span>
+                  <h3 class="mt-1">Classic Room</h3>
+                  <p class="text-muted small mb-1">City View &nbsp;|&nbsp; 28 m²</p>
+                </div>
+                <div class="text-end">
+                  <p class="room-price">KES 12,000</p>
+                  <p class="room-price-label">per night</p>
+                </div>
+              </div>
+              <ul class="room-amenities mt-2">
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Queen bed with handmade mattress</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> En-suite rainfall shower</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Complimentary breakfast</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Nespresso machine &amp; mini bar</li>
+              </ul>
+              <a href="contact.html" class="btn btn-gold mt-3 w-100">Reserve This Room</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Classic Room 2 -->
+        <div class="col-12 col-md-6 col-lg-4 room-item" data-category="classic">
+          <article class="alder-card h-100">
+            <div class="room-card__img room-card__img--classic2" role="img" aria-label="Classic Room - Courtyard View"></div>
+            <div class="alder-card__body">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <span class="room-badge">Classic</span>
+                  <h3 class="mt-1">Classic Room</h3>
+                  <p class="text-muted small mb-1">Courtyard View &nbsp;|&nbsp; 28 m²</p>
+                </div>
+                <div class="text-end">
+                  <p class="room-price">KES 11,500</p>
+                  <p class="room-price-label">per night</p>
+                </div>
+              </div>
+              <ul class="room-amenities mt-2">
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Queen bed with handmade mattress</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> En-suite bath &amp; shower</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Complimentary breakfast</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Quiet garden-facing balcony</li>
+              </ul>
+              <a href="contact.html" class="btn btn-gold mt-3 w-100">Reserve This Room</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Deluxe Room -->
+        <div class="col-12 col-md-6 col-lg-4 room-item" data-category="deluxe" id="deluxe">
+          <article class="alder-card h-100">
+            <div class="room-card__img room-card__img--deluxe" role="img" aria-label="Deluxe Room"></div>
+            <div class="alder-card__body">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <span class="room-badge room-badge--deluxe">Deluxe</span>
+                  <h3 class="mt-1">Deluxe Room</h3>
+                  <p class="text-muted small mb-1">Balcony &nbsp;|&nbsp; 40 m²</p>
+                </div>
+                <div class="text-end">
+                  <p class="room-price">KES 18,500</p>
+                  <p class="room-price-label">per night</p>
+                </div>
+              </div>
+              <ul class="room-amenities mt-2">
+                <li><i class="bi bi-check2" aria-hidden="true"></i> King bed with premium linen</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Rainfall shower + plunge tub</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Private balcony</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Rooftop lounge access</li>
+              </ul>
+              <a href="contact.html" class="btn btn-gold mt-3 w-100">Reserve This Room</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Deluxe Plus -->
+        <div class="col-12 col-md-6 col-lg-4 room-item" data-category="deluxe">
+          <article class="alder-card h-100">
+            <div class="room-card__img room-card__img--deluxe2" role="img" aria-label="Deluxe Plus Room"></div>
+            <div class="alder-card__body">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <span class="room-badge room-badge--deluxe">Deluxe</span>
+                  <h3 class="mt-1">Deluxe Plus</h3>
+                  <p class="text-muted small mb-1">Corner Suite &nbsp;|&nbsp; 48 m²</p>
+                </div>
+                <div class="text-end">
+                  <p class="room-price">KES 22,000</p>
+                  <p class="room-price-label">per night</p>
+                </div>
+              </div>
+              <ul class="room-amenities mt-2">
+                <li><i class="bi bi-check2" aria-hidden="true"></i> King bed, corner views</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Walk-in wardrobe</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Espresso bar &amp; work desk</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Priority restaurant reservations</li>
+              </ul>
+              <a href="contact.html" class="btn btn-gold mt-3 w-100">Reserve This Room</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Junior Suite -->
+        <div class="col-12 col-md-6 col-lg-4 room-item" data-category="suite">
+          <article class="alder-card h-100">
+            <div class="room-card__img room-card__img--junior" role="img" aria-label="Junior Suite"></div>
+            <div class="alder-card__body">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <span class="room-badge room-badge--suite">Suite</span>
+                  <h3 class="mt-1">Junior Suite</h3>
+                  <p class="text-muted small mb-1">Garden Terrace &nbsp;|&nbsp; 60 m²</p>
+                </div>
+                <div class="text-end">
+                  <p class="room-price">KES 28,000</p>
+                  <p class="room-price-label">per night</p>
+                </div>
+              </div>
+              <ul class="room-amenities mt-2">
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Separate living &amp; sleeping areas</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Private garden terrace</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Full bath with soaking tub</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Complimentary evening canapes</li>
+              </ul>
+              <a href="contact.html" class="btn btn-gold mt-3 w-100">Reserve This Room</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- The Alder Suite -->
+        <div class="col-12 col-md-6 col-lg-4 room-item" data-category="suite" id="suite">
+          <article class="alder-card h-100">
+            <div class="room-card__img room-card__img--suite" role="img" aria-label="The Alder Suite"></div>
+            <div class="alder-card__body">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <span class="room-badge room-badge--suite">Flagship Suite</span>
+                  <h3 class="mt-1">The Alder Suite</h3>
+                  <p class="text-muted small mb-1">Skyline View &nbsp;|&nbsp; 90 m²</p>
+                </div>
+                <div class="text-end">
+                  <p class="room-price">KES 38,000</p>
+                  <p class="room-price-label">per night</p>
+                </div>
+              </div>
+              <ul class="room-amenities mt-2">
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Living room + dining area</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Skyline terrace</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Dedicated butler service</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Airport transfer included</li>
+              </ul>
+              <a href="contact.html" class="btn btn-gold mt-3 w-100">Reserve This Room</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <!-- Empty state message (shown by JS when no results match filter) -->
+      <p id="noRoomsMsg" class="text-center text-muted mt-4" style="display: none;">
+        No rooms found for that filter. Try a different category.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="alder-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-lg-4">
+          <p class="footer-brand">The Alder <span>Grand</span></p>
+          <div class="footer-gold-rule"></div>
+          <p>A boutique hotel in the heart of Nairobi.</p>
+          <div class="footer-social mt-3">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="rooms.html">Accommodation</a></li>
+            <li><a href="dining.html">Restaurant</a></li>
+            <li><a href="#">Spa</a></li>
+            <li><a href="contact.html">Transfers</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h5>Find Us</h5>
+          <p><i class="bi bi-geo-alt-fill me-2" style="color: var(--color-gold);"></i>14 Alder Lane, Westlands, Nairobi</p>
+          <p><i class="bi bi-telephone-fill me-2" style="color: var(--color-gold);"></i>+254 700 123 456</p>
+          <p><i class="bi bi-envelope-fill me-2" style="color: var(--color-gold);"></i>hello@aldergrand.co.ke</p>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <p class="mb-0">&copy; 2026 The Alder Grand Hotel. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/rooms.js"></script>
+</body>
+</html>
