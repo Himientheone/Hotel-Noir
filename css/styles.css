@@ -1,12 +1,11 @@
-/* Custom CSS for Hotel Noir£ Grand */
 :root {
-  --color-forest:   #1B3A2D; /* primary dark green */
-  --color-gold:     #C9A84C; /* accent gold */
-  --color-ivory:    #F5F0E8; /* light background */
-  --color-charcoal: #2C2C2C; /* body text */
-  --color-sage:     #8FAF93; /* soft secondary green */
+  --color-forest:   #1B3A2D; 
+  --color-gold:     #C9A84C; 
+  --color-ivory:    #F5F0E8; 
+  --color-charcoal: #2C2C2C; 
+  --color-sage:     #8FAF93; 
   --color-white:    #FFFFFF;
-  --color-light-bg: #FDFAF4; /* very pale warm white */
+  --color-light-bg: #FDFAF4; 
 
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body:    'Inter', system-ui, sans-serif;
