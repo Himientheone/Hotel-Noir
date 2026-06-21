@@ -1,7 +1,6 @@
 .hero {
   position: relative;
   min-height: 92vh;
-  /* Gradient placeholder simulating a hotel photo */
   background: linear-gradient(
       135deg,
       #1b3a2d 0%,
@@ -15,7 +14,7 @@
   overflow: hidden;
 }
 
-/* Dark overlay so text is always readable over any background image */
+
 .hero__overlay {
   position: absolute;
   inset: 0;
@@ -23,7 +22,7 @@
 }
 
 .hero__content {
-  position: relative; /* sits above the overlay */
+  position: relative; 
   z-index: 2;
   padding: 2rem 1rem;
   max-width: 700px;
@@ -55,7 +54,7 @@
   flex-wrap: wrap;
 }
 
-/* Animated scroll hint arrow at the bottom of the hero */
+
 .hero__scroll-hint {
   position: absolute;
   bottom: 2rem;
@@ -100,7 +99,6 @@
   font-size: 0.9rem;
 }
 
-/* Make date input text visible on dark background */
 .booking-form__input::-webkit-calendar-picker-indicator {
   filter: invert(0.85);
 }
@@ -113,7 +111,7 @@
   outline: none;
 }
 
-/* Make select option text dark so it's readable in browser dropdowns */
+
 .booking-form__input option {
   color: var(--color-charcoal);
   background-color: var(--color-white);
@@ -221,7 +219,7 @@
   margin: 0;
 }
 
-/* Override Bootstrap carousel controls for dark/light conflict */
+
 .carousel-control-prev,
 .carousel-control-next {
   width: 40px;

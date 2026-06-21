@@ -1,6 +1,6 @@
 (function () {
   const form = document.getElementById('quickBookForm');
-  if (!form) return; // Only run on pages that have this form
+  if (!form) return;
 
   
   const today = new Date().toISOString().split('T')[0];
@@ -25,9 +25,8 @@
   });
 
   form.addEventListener('submit', function (e) {
-    e.preventDefault(); // Stop default page reload
+    e.preventDefault(); 
 
-    // Clear any previous error messages
     clearErrors();
 
     let hasErrors = false;

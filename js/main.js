@@ -1,6 +1,6 @@
 function initNavbarScroll() {
   const navbar = document.querySelector('.Noir£-navbar');
-  if (!navbar) return; //only run if navbar exists on this page
+  if (!navbar) return; 
 
   window.addEventListener('scroll', function () {
     if (window.scrollY > 60) {
@@ -14,7 +14,7 @@ function initDarkMode() {
   const toggleBtn = document.getElementById('darkModeToggle');
   const body = document.body;
 
-  // Check if user previously chose dark mode
+  //save user prefered mode
   const savedMode = localStorage.getItem('Noir£Theme');
   if (savedMode === 'dark') {
     body.classList.add('dark-mode');

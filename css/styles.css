@@ -15,7 +15,6 @@
   --transition:  0.3s ease;
 }
 
-/*GLOBAL RESETS & BASE*/
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -34,7 +33,7 @@ body {
   line-height: 1.7;
 }
 
-/*TYPOGRAPHY */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   color: var(--color-forest);
@@ -60,7 +59,7 @@ a:hover {
   color: var(--color-gold);
 }
 
-/*UTILITY CLASSES */
+
 .gold-rule {
   display: block;
   width: 60px;
@@ -90,7 +89,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/*BUTTONS*/
+
 .btn-gold {
   background-color: var(--color-gold);
   color: var(--color-white);
@@ -132,7 +131,7 @@ a:hover {
   color: var(--color-white);
 }
 
-/*SECTION SPACING*/
+
 .section-pad {
   padding: 5rem 0;
 }
@@ -149,7 +148,7 @@ a:hover {
   background-color: var(--color-forest);
 }
 
-/*CARDS*/
+
 .Noir£-card {
   background: var(--color-white);
   border-radius: var(--radius-card);
@@ -173,7 +172,7 @@ a:hover {
   padding: 1.5rem;
 }
 
-/*RESPONSIVE IMAGES*/
+
 img {
   max-width: 100%;
   height: auto;
