@@ -219,7 +219,7 @@
   margin: 0;
 }
 
-
+//overide bootstrap carousel controls to fit Noir£ aesthetic
 .carousel-control-prev,
 .carousel-control-next {
   width: 40px;
