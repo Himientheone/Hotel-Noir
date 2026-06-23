@@ -25,7 +25,7 @@ body.dark-mode a:hover {
 }
 
 
-body.dark-mode .alder-navbar {
+body.dark-mode .Noir£-navbar {
   background-color: #0d1f16;
 }
 
@@ -40,22 +40,22 @@ body.dark-mode .bg-forest {
 }
 
 
-body.dark-mode .alder-card {
+body.dark-mode .Noir£-card {
   background-color: #1e1e1e;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
-body.dark-mode .alder-card__body h3,
-body.dark-mode .alder-card__body h4 {
+body.dark-mode .Noir£-card__body h3,
+body.dark-mode .Noir£-card__body h4 {
   color: var(--color-ivory);
 }
 
-body.dark-mode .alder-card__body p {
+body.dark-mode .Noir£-card__body p {
   color: #9a9590;
 }
 
 
-body.dark-mode .pillar-card {
+body.dark-mode .Noir£-pillar-card {
   background-color: #1e1e1e;
 }
 
@@ -184,7 +184,7 @@ body.dark-mode .accordion-body {
 }
 
 
-body.dark-mode .alder-footer {
+body.dark-mode .Noir£-footer {
   background-color: #0a0a0a;
 }
 
