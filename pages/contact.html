@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Hotel Noir£. Make a reservation or enquire about events." />
+  <title>Contact | Hotel Noir£</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/about.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg Noir£-navbar" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Hotel Noir£</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="dining.html">Dining</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="darkModeToggle" class="btn btn-sm nav-link" aria-label="Switch to dark mode">
+              <i class="bi bi-moon-fill"></i>
+            </button>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link nav-cta" href="rooms.html">Book Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Header-->
+  <header class="page-header bg-forest text-center">
+    <div class="container">
+      <span class="section-label">We'd Love to Hear From You</span>
+      <h1 class="page-header__title text-white">Contact &amp; Reservations</h1>
+      <span class="gold-rule"></span>
+    </div>
+  </header>
+
+  <!--Contact Main Section-->
+  <section class="section-pad">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+
+        <!--Contact Form-left-->
+        <div class="col-12 col-lg-7">
+          <span class="section-label">Send Us a Message</span>
+          <h2>Make an Enquiry</h2>
+          <span class="gold-rule gold-rule--left"></span>
+
+          
+          <form id="contactForm" novalidate class="contact-form mt-4">
+
+            <div class="row g-3">
+              <!--Full name-->
+              <div class="col-12 col-sm-6">
+                <label for="contactName" class="contact-label">Full Name <span class="required-star" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  class="form-control contact-input"
+                  id="contactName"
+                  placeholder="e.g. Amara Osei"
+                  required
+                  aria-required="true"
+                />
+              </div>
+
+              <!--Email-->
+              <div class="col-12 col-sm-6">
+                <label for="contactEmail" class="contact-label">Email Address <span class="required-star" aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  class="form-control contact-input"
+                  id="contactEmail"
+                  placeholder="you@example.com"
+                  required
+                  aria-required="true"
+                />
+              </div>
+
+              <!--Phone-->
+              <div class="col-12 col-sm-6">
+                <label for="contactPhone" class="contact-label">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control contact-input"
+                  id="contactPhone"
+                  placeholder="+254 7XX XXX XXX"
+                />
+              </div>
+
+              <!--Enquiry type-->
+              <div class="col-12 col-sm-6">
+                <label for="contactType" class="contact-label">Enquiry Type <span class="required-star" aria-hidden="true">*</span></label>
+                <select class="form-select contact-input" id="contactType" required aria-required="true">
+                  <option value="">-- Select --</option>
+                  <option value="reservation">Room Reservation</option>
+                  <option value="dining">Dining / Private Event</option>
+                  <option value="spa">Spa Booking</option>
+                  <option value="conference">Conference &amp; Meetings</option>
+                  <option value="other">General Enquiry</option>
+                </select>
+              </div>
+
+              <!--Preferred dates-->
+              <div class="col-12 col-sm-6">
+                <label for="contactArrival" class="contact-label">Preferred Arrival Date</label>
+                <input type="date" class="form-control contact-input" id="contactArrival" />
+              </div>
+              <div class="col-12 col-sm-6">
+                <label for="contactDeparture" class="contact-label">Preferred Departure Date</label>
+                <input type="date" class="form-control contact-input" id="contactDeparture" />
+              </div>
+
+              <!--Message-->
+              <div class="col-12">
+                <label for="contactMessage" class="contact-label">Your Message <span class="required-star" aria-hidden="true">*</span></label>
+                <textarea
+                  class="form-control contact-input"
+                  id="contactMessage"
+                  rows="5"
+                  placeholder="Tell us how we can help..."
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+
+              <!--Submit-->
+              <div class="col-12">
+                <button type="submit" class="btn btn-gold" id="contactSubmitBtn">
+                  Send Message
+                </button>
+              </div>
+            </div>
+
+          </form>
+
+          <!--Success message after submission-->
+          <div id="contactSuccess" class="contact-success mt-4" style="display:none;" role="alert">
+            <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+            <div>
+              <strong>Message sent!</strong>
+              <p>Thank you for reaching out. You will receive a reply within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info-->
+        <div class="col-12 col-lg-5">
+          <span class="section-label">Hotel Details</span>
+          <h2>Find Us</h2>
+          <span class="gold-rule gold-rule--left"></span>
+
+          <ul class="contact-info-list mt-4">
+            <li>
+              <i class="bi bi-geo-alt-fill contact-info-icon" aria-hidden="true"></i>
+              <div>
+                <strong>Address</strong>
+                <p>Matundu Lane, Westlands, Nairobi, Kenya</p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-telephone-fill contact-info-icon" aria-hidden="true"></i>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+254794107388">+254 794 107 388</a></p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill contact-info-icon" aria-hidden="true"></i>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:hello@Hotel.Noir£.co.ke">hello@Hotel.Noir£.co.ke</a></p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-clock-fill contact-info-icon" aria-hidden="true"></i>
+              <div>
+                <strong>Hours</strong>
+                <p>Reception: 24 hours, 7 days a week<br />
+                   Reservations team: 7:00 AM – 9:00 PM</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="map-placeholder mt-4" role="img" aria-label="Map location of Hotel Noir£, Westlands, Nairobi">
+            <div class="map-placeholder__inner">
+              <i class="bi bi-map" aria-hidden="true"></i>
+              <p>Matundu Lane, Westlands<br />Nairobi, Kenya</p>
+              <a
+                href="https://www.google.com/maps/search/Westlands+Nairobi"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-gold btn-sm mt-2"
+              >
+                Open in Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--FAQ-->
+  <section class="section-pad bg-ivory" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Quick Answers</span>
+        <h2 id="faq-heading">Frequently Asked Questions</h2>
+        <span class="gold-rule"></span>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="accordion" id="faqAccordion">
+
+            <div class="accordion-item faq-item">
+              <h3 class="accordion-header" id="faq1-heading">
+                <button class="accordion-button faq-btn" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq1"
+                  aria-expanded="true" aria-controls="faq1">
+                  What time is check-in and check-out?
+                </button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse show"
+                aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+                <div class="accordion-body faq-body">
+                  Check-in is from 2:00 PM and check-out is by 11:00 AM. Early check-in or late
+                  check-out can be arranged subject to availability — please contact us at least 
+                  24 hours in advance and we will do our best to accommodate you.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-item">
+              <h3 class="accordion-header" id="faq2-heading">
+                <button class="accordion-button faq-btn collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq2"
+                  aria-expanded="false" aria-controls="faq2">
+                  Is breakfast included in the room rate?
+                </button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse"
+                aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
+                <div class="accordion-body faq-body">
+                  Classic and Deluxe rooms include complimentary breakfast for two guests at Noir£ Table.
+                  Suites include full breakfast and evening canapes. Additional guests can be added 
+                  for KES 1,200 per person.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-item">
+              <h3 class="accordion-header" id="faq3-heading">
+                <button class="accordion-button faq-btn collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq3"
+                  aria-expanded="false" aria-controls="faq3">
+                  Do you offer airport transfers?
+                </button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse"
+                aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
+                <div class="accordion-body faq-body">
+                  Yes. We offer private transfers to and from Jomo Kenyatta International Airport
+                  and Wilson Airport. The service is complimentary for guests booked in The Noir£ 
+                  Suite, and available for KES 3,500 (one way) for all other room types. Please 
+                  provide your flight details at least 24 hours before arrival.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-item">
+              <h3 class="accordion-header" id="faq4-heading">
+                <button class="accordion-button faq-btn collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq4"
+                  aria-expanded="false" aria-controls="faq4">
+                  What is your cancellation policy?
+                </button>
+              </h3>
+              <div id="faq4" class="accordion-collapse collapse"
+                aria-labelledby="faq4-heading" data-bs-parent="#faqAccordion">
+                <div class="accordion-body faq-body">
+                  Cancellations made more than 48 hours before arrival receive a full refund. 
+                  Cancellations within 48 hours are charged one night's room rate. No-shows 
+                  are charged the full reservation amount. Special event rates and long-stay 
+                  packages may have different terms — these are confirmed at time of booking.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="alder-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-lg-4">
+          <p class="footer-brand">Hotel <span>Noir£</span></p>
+          <div class="footer-gold-rule"></div>
+          <p>A boutique hotel in the heart of Nairobi.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>More</h5>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h5>Find Us</h5>
+          <p><i class="bi bi-geo-alt-fill me-2" style="color: var(--color-gold);"></i>Matundu Lane, Westlands, Nairobi</p>
+          <p><i class="bi bi-telephone-fill me-2" style="color: var(--color-gold);"></i>+254 794 107 388</p>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between">
+        <p class="mb-0">&copy; 2026 Hotel Noir£. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>
