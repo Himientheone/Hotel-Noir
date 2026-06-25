@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Photo gallery of Hotel Noir£ Grand - rooms, dining, spa, and exterior." />
+  <title>Gallery | Hotel Noir£ Grand</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/navigationbar.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/about.css" />
+  <link rel="stylesheet" href="../css/gallery.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg Noir£-navbar" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Hotel Noir£<span>Grand</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="dining.html">Dining</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="darkModeToggle" class="btn btn-sm nav-link" aria-label="Switch to dark mode">
+              <i class="bi bi-moon-fill"></i>
+            </button>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link nav-cta" href="rooms.html">Book Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <header class="page-header bg-forest text-center">
+    <div class="container">
+      <span class="section-label">Visual Tour</span>
+      <h1 class="page-header__title text-white">Gallery</h1>
+      <span class="gold-rule"></span>
+    </div>
+  </header>
+
+ 
+  <section class="section-pad-sm bg-ivory">
+    <div class="container text-center">
+      <div class="filter-btns" role="group" aria-label="Gallery category filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="rooms">Rooms</button>
+        <button class="filter-btn" data-filter="dining">Dining</button>
+        <button class="filter-btn" data-filter="spa">Spa</button>
+        <button class="filter-btn" data-filter="exterior">Exterior</button>
+      </div>
+    </div>
+  </section>
+
+  <!--Gallery Grid-->
+  <section class="section-pad">
+    <div class="container">
+      <div class="row g-3" id="galleryGrid">
+
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="rooms" data-caption="Classic Room — City View">
+          <div class="gallery-thumb gallery-thumb--1" role="img" aria-label="Classic Room - City View">
+            <div class="gallery-thumb__overlay">
+              <i class="bi bi-zoom-in" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="rooms" data-caption="Deluxe Room — Rainfall Shower">
+          <div class="gallery-thumb gallery-thumb--2" role="img" aria-label="Deluxe Room - Rainfall Shower">
+            <div class="gallery-thumb__overlay">
+              <i class="bi bi-zoom-in" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="rooms" data-caption="The Noir£ Suite — Living Room">
+          <div class="gallery-thumb gallery-thumb--3" role="img" aria-label="Noir£ Suite - Living Room">
+            <div class="gallery-thumb__overlay">
+              <i class="bi bi-zoom-in" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="rooms" data-caption="Junior Suite — Garden Terrace">
+          <div class="gallery-thumb gallery-thumb--4" role="img" aria-label="Junior Suite - Garden Terrace">
+            <div class="gallery-thumb__overlay">
+              <i class="bi bi-zoom-in" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="dining" data-caption="Noir£ Table — Evening Service">
+          <div class="gallery-thumb gallery-thumb--5" role="img" aria-label="Noir£ Table restaurant">
+            <div class="gallery-thumb__overlay">
+              <i class="bi bi-zoom-in" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="dining" data-caption="Kiambu Lamb Rack">
+          <div class="gallery-thumb gallery-thumb--6" role="img" aria-label="Signature lamb dish">
+            <div class="gallery-thumb__overlay">
+              <i class="bi bi-zoom-in" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="dining" data-caption="Noir£ Bar — Craft Cocktails">
+          <div class="gallery-thumb gallery-thumb--7" role="img" aria-label="Noir£ Bar cocktails">
+            <div class="gallery-thumb__overlay">
+              <i class="bi bi-zoom-in" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="dining" data-caption="Open Courtyard Terrace">
+          <div class="gallery-thumb gallery-thumb--8" role="img" aria-label="Courtyard terrace dining">
+            <div class="gallery-thumb__overlay">
+              <i class="bi bi-zoom-in" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="spa" data-caption="Spa Treatment Room">
+          <div class="gallery-thumb gallery-thumb--9" role="img" aria-label="Spa treatment room">
+            <div class="gallery-thumb__overlay">
+              <i class="bi bi-zoom-in" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="spa" data-caption="Rooftop Pool at Sunset">
+          <div class="gallery-thumb gallery-thumb--10" role="img" aria-label="Rooftop pool">
+            <div class="gallery-thumb__overlay">
+              <i class="bi bi-zoom-in" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="exterior" data-caption="Hotel Entrance — Matundu lane">
+          <div class="gallery-thumb gallery-thumb--11" role="img" aria-label="Hotel entrance">
+            <div class="gallery-thumb__overlay">
+              <i class="bi bi-zoom-in" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="exterior" data-caption="Central Courtyard Garden">
+          <div class="gallery-thumb gallery-thumb--12" role="img" aria-label="Courtyard garden">
+            <div class="gallery-thumb__overlay">
+              <i class="bi bi-zoom-in" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--Lightbox Modal-->
+  <div class="modal fade" id="galleryModal" tabindex="-1"
+    aria-labelledby="galleryModalLabel" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content gallery-modal-content">
+        <button type="button" class="btn-close gallery-modal-close"
+          data-bs-dismiss="modal" aria-label="Close gallery image"></button>
+        <!--placeholder and caption are injected here by JS-->
+        <div id="modalImageArea" class="gallery-modal-img"></div>
+        <p id="modalCaption" class="gallery-modal-caption"></p>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer class="Noir£-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-lg-4">
+          <p class="footer-brand">Hotel Noir£<span>Grand</span></p>
+          <div class="footer-gold-rule"></div>
+          <p>A boutique hotel in the heart of Nairobi.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="rooms.html">Accommodation</a></li>
+            <li><a href="dining.html">Restaurant</a></li>
+            <li><a href="#">Spa</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h5>Find Us</h5>
+          <p><i class="bi bi-geo-alt-fill me-2" style="color: var(--color-gold);"></i>Matundu Lane, Westlands, Nairobi</p>
+          <p><i class="bi bi-telephone-fill me-2" style="color: var(--color-gold);"></i>+254 794107388</p>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between">
+        <p class="mb-0">&copy; 2026 Hotel Noir£ Grand. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/gallery.js"></script>
+</body>
+</html>
