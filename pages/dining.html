@@ -3,35 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dining | Hotel Noir£ Grand </title>
+  <meta name="description" content="Noir£ Table - Hotel Noir£ Grand's farm-to-table restaurant." />
+  <title>Dining | Hotel Noir£ Grand</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/navigationbar.css" />
   <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/about.css" />
   <link rel="stylesheet" href="../css/dining.css" />
 </head>
 <body>
 
-  <!-- navigationbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+  <nav class="navbar navbar-expand-lg Noir£-navbar" aria-label="Main navigation">
     <div class="container">
-      <a class="navbar-brand fw-bold fs-4" href="../index.html">
-        Hotel Noir£<span class="text-warning">Grand</span>
-      </a>
-
-      <!-- Mobile hamburger button -->
+      <a class="navbar-brand" href="../index.html">Hotel Noir£<span>Grand</span></a>
       <button class="navbar-toggler" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navMenu"
-        aria-controls="navMenu" aria-expanded="false"
+        data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto gap-1 align-items-lg-center">
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
@@ -39,112 +36,92 @@
           <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <!-- Dark mode toggle -->
-          <li class="nav-item">
-            <button id="darkModeToggle" class="btn btn-sm btn-outline-warning ms-2"
-              aria-label="Toggle dark mode">
+          <li class="nav-item ms-lg-2">
+            <button id="darkModeToggle" class="btn btn-sm nav-link"
+              aria-label="Switch to dark mode">
               <i class="bi bi-moon-fill"></i>
             </button>
           </li>
-          <!-- Book Now button -->
-          <li class="nav-item">
-            <a class="btn btn-warning text-dark fw-bold ms-2" href="rooms.html">Book Now</a>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link nav-cta" href="rooms.html">Book Now</a>
           </li>
         </ul>
       </div>
-
     </div>
   </nav>
 
-
-  <!--Page Header-->
-  <section class="bg-dark text-white text-center py-5">
-    <div class="container py-3">
-      <p class="text-warning text-uppercase fw-bold small letter-spacing">Restaurant & Bar</p>
-      <h1 class="display-5 fw-bold">Noir£ Table</h1>
-      <hr class="border-warning w-25 mx-auto border-2 opacity-100" />
-      <p class="text-white-50 mt-3">
-        Farm-to-table cooking rooted in East African ingredients and technique.
+  
+  <header class="page-header text-center">
+    <div class="container">
+      <span class="section-label">Restaurant &amp; Bar</span>
+      <h1 class="page-header__title text-white">Noir£ Table</h1>
+      <span class="gold-rule"></span>
+      <p class="text-white-50 mt-2">
+        Farm-to-table cooking rooted in Kenyan ingredients and technique.
       </p>
     </div>
-  </section>
+  </header>
 
-  <section class="py-5 bg-light">
+  
+  <section class="section-pad bg-ivory">
     <div class="container">
       <div class="row align-items-center g-5">
-
-        
         <div class="col-lg-6">
-          <img
-            src="../images/restaurant.jpg"
-            alt="Noir£ Table restaurant interior"
-            class="img-fluid rounded shadow"
-            style="width:100%; height:400px; object-fit:cover;"
-          />
+          <div class="dining-hero-img"></div>
         </div>
 
-        <!-- Text content -->
+        <!--Text-->
         <div class="col-lg-6">
-          <p class="text-warning text-uppercase fw-bold small">The Restaurant</p>
-          <h2 class="fw-bold">Food That Knows Where It Comes From</h2>
-          <hr class="border-warning w-25 ms-0 border-2 opacity-100" />
-
-          <p class="text-muted mt-3">
-            Noir£ Table seats 48 guests across a dining room and an open courtyard terrace.
-            The menu changes every six weeks, but the philosophy stays constant: every
-            ingredient must have Chef Grace Wanjiku's approval.
+          <span class="section-label">The Restaurant</span>
+          <h2 class="section-title">Food That Knows<br />Where It Comes From</h2>
+          <span class="gold-rule gold-rule--left"></span>
+          <p class="mb-3">
+            Noir£ Table seats 48 guests across a dining room and an open courtyard
+            terrace. The menu changes every six weeks, but the philosophy stays
+            constant: every ingredient must have Chef Grace Wanjiku's approval
+            can name.
           </p>
-          <p class="text-muted">
-            We partner with twelve farms within 60 kilometres of Nairobi. Our lamb comes
-            from Kajiado. Our coffee is single-origin from Kiambu County.
-            Our bread is baked fresh every morning.
+          <p class="mb-3">
+            We partner with twelve farms within 60 kilometres of Nairobi. Our lamb
+            comes from the Kajiado. Our coffee is single-origin from Kiambu
+            County. Our bread is baked fresh every morning.
           </p>
 
-          <h6 class="text-uppercase text-warning fw-bold mt-4 mb-2">Opening Hours</h6>
-          <table class="table table-sm table-borderless">
-            <tbody>
-              <tr>
-                <td class="fw-semibold text-dark">Breakfast</td>
-                <td class="text-muted">6:30 AM – 10:30 AM</td>
-              </tr>
-              <tr>
-                <td class="fw-semibold text-dark">Lunch</td>
-                <td class="text-muted">12:00 PM – 3:00 PM</td>
-              </tr>
-              <tr>
-                <td class="fw-semibold text-dark">Dinner</td>
-                <td class="text-muted">6:30 PM – 10:30 PM</td>
-              </tr>
-              <tr>
-                <td class="fw-semibold text-dark">Noir£ Bar</td>
-                <td class="text-muted">11:00 AM – Midnight</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="dining-hours mt-4">
+            <h5>Opening Hours</h5>
+            <table class="table table-sm table-borderless">
+              <tbody>
+                <tr><td>Breakfast</td><td>6:30 AM – 10:30 AM</td></tr>
+                <tr><td>Lunch</td><td>12:00 PM – 3:00 PM</td></tr>
+                <tr><td>Dinner</td><td>6:30 PM – 10:30 PM</td></tr>
+                <tr><td>Noir£ Bar</td><td>11:00 AM – Midnight</td></tr>
+              </tbody>
+            </table>
+          </div>
 
-          <a href="contact.html" class="btn btn-warning text-dark fw-bold mt-2">
-            Make a Reservation
-          </a>
+          <a href="contact.html" class="btn btn-gold mt-2">Make a Reservation</a>
         </div>
 
       </div>
     </div>
   </section>
 
-
-  <!--menu tabs-->
-  <section class="py-5">
+  <!--Menu-->
+  <section class="section-pad bg-white">
     <div class="container">
 
       <div class="text-center mb-5">
-        <p class="text-warning text-uppercase fw-bold small">Sample Menu</p>
-        <h2 class="fw-bold">What We're Serving</h2>
-        <hr class="border-warning w-25 mx-auto border-2 opacity-100" />
-        <p class="text-muted">Current season: <strong>Long Rains Menu, June 2026</strong></p>
+        <span class="section-label">Sample Menu</span>
+        <h2 class="section-title">What We're Serving</h2>
+        <span class="gold-rule"></span>
+        <p class="text-muted mt-2">
+          Current season: <strong>Long Rains Menu, June 2026</strong>
+        </p>
       </div>
 
       <!--Tab buttons-->
-      <ul class="nav nav-tabs justify-content-center mb-4" id="menuTabs" role="tablist">
+      <ul class="nav nav-tabs menu-tabs justify-content-center mb-4"
+        id="menuTabs" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" data-bs-toggle="tab"
             data-bs-target="#starters" type="button" role="tab">
@@ -171,219 +148,191 @@
         </li>
       </ul>
 
-      <!-- Tab content -->
+      <!--Tab content-->
       <div class="tab-content">
         <div class="row justify-content-center">
           <div class="col-12 col-md-7">
 
-            <!-- STARTERS -->
+            <!-- Starters -->
             <div class="tab-pane fade show active" id="starters" role="tabpanel">
-
-              <div class="menu-item py-3 border-bottom">
-                <div class="d-flex justify-content-between">
-                  <h6 class="fw-bold mb-1">Braised Oxtail</h6>
-                  <span class="text-warning fw-bold">KES 1,800</span>
+              <div class="menu-item">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h6 class="menu-item__name">Braised Oxtail</h6>
+                  <span class="menu-item__price">KES 1,800</span>
                 </div>
-                <p class="text-muted small mb-0">
-                  Slow-braised for eight hours, served with microgreens from our rooftop garden.
-                </p>
+                <p class="menu-item__desc">Slow-braised for eight hours,
+                  served with microgreens from our rooftop garden.</p>
               </div>
-
-              <div class="menu-item py-3 border-bottom">
-                <div class="d-flex justify-content-between">
-                  <h6 class="fw-bold mb-1">Grilled Tilapia</h6>
-                  <span class="text-warning fw-bold">KES 1,200</span>
+              <div class="menu-item">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h6 class="menu-item__name">Grilled Tilapia </h6>
+                  <span class="menu-item__price">KES 1,500</span>
                 </div>
-                <p class="text-muted small mb-0">
-                  Lake Victoria tilapia, thinly sliced, dressed with citrus,
-                  chilli oil, and fresh coriander.
-                </p>
+                <p class="menu-item__desc">Lake Victoria tilapia, thinly sliced, dressed
+                  with citrus, chilli oil, and fresh coriander.</p>
               </div>
-
-              <div class="menu-item py-3">
-                <div class="d-flex justify-content-between">
-                  <h6 class="fw-bold mb-1">Butternut special</h6>
-                  <span class="text-warning fw-bold">KES 1,000</span>
+              <div class="menu-item">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h6 class="menu-item__name">Butternut special</h6>
+                  <span class="menu-item__price">KES 1,200</span>
                 </div>
-                <p class="text-muted small mb-0">
-                  Roasted Rift Valley butternut, coconut cream, toasted pumpkin seeds,
-                  and a swirl of chilli oil. Vegan.
-                </p>
+                <p class="menu-item__desc">Roasted Rift Valley butternut, coconut cream,
+                  toasted pumpkin seeds, and a swirl of chilli oil. Vegan.</p>
               </div>
-
             </div>
 
             <!--Mains-->
             <div class="tab-pane fade" id="mains" role="tabpanel">
-
-              <div class="menu-item py-3 border-bottom">
-                <div class="d-flex justify-content-between">
-                  <h6 class="fw-bold mb-1">Kajiado Lamb Rack</h6>
-                  <span class="text-warning fw-bold">KES 3,800</span>
+              <div class="menu-item">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h6 class="menu-item__name">Kajiado Lamb Rack</h6>
+                  <span class="menu-item__price">KES 3,800</span>
                 </div>
-                <p class="text-muted small mb-0">
-                  Herb-crusted rack, black garlic sauce, roasted root vegetables,
-                  and a red wine glass.
-                </p>
+                <p class="menu-item__desc">Herb-crusted rack, black garlic sauce,
+                  roasted root vegetables, and a glass of red wine.</p>
               </div>
-
-              <div class="menu-item py-3 border-bottom">
-                <div class="d-flex justify-content-between">
-                  <h6 class="fw-bold mb-1">Grilled Kuku Kienyeji</h6>
-                  <span class="text-warning fw-bold">KES 2,500</span>
+              <div class="menu-item">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h6 class="menu-item__name">Grilled Kuku Kienyeji</h6>
+                  <span class="menu-item__price">KES 2,400</span>
                 </div>
-                <p class="text-muted small mb-0">
-                  Free-range local chicken, grilled over charcoal,
-                  with pilipili and roasted plantain.
-                </p>
+                <p class="menu-item__desc">Free-range local chicken, spatchcocked and
+                  grilled over charcoal, with pilipili and roasted plantain.</p>
               </div>
-
-              <div class="menu-item py-3">
-                <div class="d-flex justify-content-between">
-                  <h6 class="fw-bold mb-1">Mung Beans &amp; Matoke Stew</h6>
-                  <span class="text-warning fw-bold">KES 1,600</span>
+              <div class="menu-item">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h6 class="menu-item__name">Mung Bean &amp; Matoke Stew</h6>
+                  <span class="menu-item__price">KES 1,600</span>
                 </div>
-                <p class="text-muted small mb-0">
-                  A vegetarian celebration of Kenya's pantry — slow-cooked with coconut
-                  milk, turmeric, and fresh ginger. Served with ugali.
-                </p>
+                <p class="menu-item__desc">Slow-cooked with coconut milk, turmeric,
+                  and fresh ginger. Served with ugali ya wimbi. Vegan.</p>
               </div>
-
             </div>
 
             <!--Desserts-->
             <div class="tab-pane fade" id="desserts" role="tabpanel">
-
-              <div class="menu-item py-3 border-bottom">
-                <div class="d-flex justify-content-between">
-                  <h6 class="fw-bold mb-1">Passionfruit Tart</h6>
-                  <span class="text-warning fw-bold">KES 850</span>
+              <div class="menu-item">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h6 class="menu-item__name">Passionfruit Tart</h6>
+                  <span class="menu-item__price">KES 1,050</span>
                 </div>
-                <p class="text-muted small mb-0">
-                  Wild passionfruit in a toasted almond shell, finished with
-                  hibiscus gel and edible flowers.
-                </p>
+                <p class="menu-item__desc">Wild passionfruit in a toasted almond
+                  shell, finished with hibiscus gel and edible flowers.</p>
               </div>
-
-              <div class="menu-item py-3">
-                <div class="d-flex justify-content-between">
-                  <h6 class="fw-bold mb-1">Kiambu Coffee Panna Cotta</h6>
-                  <span class="text-warning fw-bold">KES 750</span>
+              <div class="menu-item">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h6 class="menu-item__name">Kiambu Coffee Panna Cotta</h6>
+                  <span class="menu-item__price">KES 750</span>
                 </div>
-                <p class="text-muted small mb-0">
-                  Silky panna cotta brewed with single-origin Kiambu AA coffee,
-                  topped with caramel.
-                </p>
+                <p class="menu-item__desc">Silky panna cotta brewed with single-origin
+                  Kiambu AA coffee, topped with caramel.</p>
               </div>
-
             </div>
 
             <!--Drinks-->
             <div class="tab-pane fade" id="drinks" role="tabpanel">
-
-              <div class="menu-item py-3 border-bottom">
-                <div class="d-flex justify-content-between">
-                  <h6 class="fw-bold mb-1">The Noir£ Sour</h6>
-                  <span class="text-warning fw-bold">KES 900</span>
+              <div class="menu-item">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h6 class="menu-item__name">The Noire Sour</h6>
+                  <span class="menu-item__price">KES 900</span>
                 </div>
-                <p class="text-muted small mb-0">
-                  Our signature cocktail — Kenyan gin, tamarind syrup and lime.
-                </p>
+                <p class="menu-item__desc">Our signature cocktail — Kenyan gin,
+                  tamarind syrup, and lime.</p>
               </div>
-
-              <div class="menu-item py-3 border-bottom">
-                <div class="d-flex justify-content-between">
-                  <h6 class="fw-bold mb-1">Hibiscus Spritz (Non-Alcoholic)</h6>
-                  <span class="text-warning fw-bold">KES 450</span>
+              <div class="menu-item">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h6 class="menu-item__name">Hibiscus Spritz (Non-Alcoholic)</h6>
+                  <span class="menu-item__price">KES 450</span>
                 </div>
-                <p class="text-muted small mb-0">
-                  House-brewed hibiscus concentrate, sparkling water, ginger, and mint.
-                </p>
+                <p class="menu-item__desc">House-brewed hibiscus concentrate,
+                  sparkling water, ginger, and mint.</p>
               </div>
-
-              <div class="menu-item py-3">
-                <div class="d-flex justify-content-between">
-                  <h6 class="fw-bold mb-1">Kiambu Single Origin (Pour Over)</h6>
-                  <span class="text-warning fw-bold">KES 380</span>
+              <div class="menu-item">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h6 class="menu-item__name">Kiambu Single Origin (Pour Over)</h6>
+                  <span class="menu-item__price">KES 380</span>
                 </div>
-                <p class="text-muted small mb-0">
-                  Light roast, floral and bright, brewed fresh to order.
-                </p>
+                <p class="menu-item__desc">Light roast, floral and bright, brewed
+                  fresh to order.</p>
               </div>
-
             </div>
 
           </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Amenity Bar-->
+  <section class="bg-forest section-pad-sm">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3">
+          <i class="bi bi-cup-hot amenity-icon"></i>
+          <p class="amenity-label">Farm-to-Table Menu</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-tree amenity-icon"></i>
+          <p class="amenity-label">60km Sourcing Radius</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-droplet amenity-icon"></i>
+          <p class="amenity-label">Full Bar &amp; Cocktails</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-calendar-check amenity-icon"></i>
+          <p class="amenity-label">Private Dining Available</p>
         </div>
       </div>
     </div>
   </section>
 
-
-  <!--Footer-->
-  <footer class="bg-dark text-white pt-5 pb-3">
+  <!-- Footer -->
+  <footer class="Noir£-footer">
     <div class="container">
       <div class="row g-4">
-
         <div class="col-12 col-lg-4">
-          <h5 class="fw-bold">Hotel Noir£<span class="text-warning">Grand</span></h5>
-          <hr class="border-warning w-25 ms-0 border-2 opacity-100" />
-          <p class="text-white-50 small">
-            A boutique hotel in the heart of Nairobi.
-          </p>
-          <div class="d-flex gap-3 mt-3">
-            <a href="#" class="text-white-50 fs-5" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white-50 fs-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-white-50 fs-5" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <p class="footer-brand">Hotel Noir£<span>Grand</span></p>
+          <div class="footer-gold-rule"></div>
+          <p>A boutique hotel in the heart of Nairobi.</p>
+          <div class="footer-social mt-3">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
           </div>
         </div>
-
-               <div class="col-6 col-lg-2">
-          <h6 class="text-uppercase text-warning fw-bold small">Explore</h6>
-          <ul class="list-unstyled mt-2">
-            <li><a href="../index.html" class="text-white-50 text-decoration-none small">Home</a></li>
-            <li><a href="about.html" class="text-white-50 text-decoration-none small">About</a></li>
-            <li><a href="rooms.html" class="text-white-50 text-decoration-none small">Rooms</a></li>
-            <li><a href="dining.html" class="text-white-50 text-decoration-none small">Dining</a></li>
-            <li><a href="gallery.html" class="text-white-50 text-decoration-none small">Gallery</a></li>
-          </ul>
-        </div>
-
         <div class="col-6 col-lg-2">
-          <h6 class="text-uppercase text-warning fw-bold small">Services</h6>
-          <ul class="list-unstyled mt-2">
-            <li><a href="rooms.html" class="text-white-50 text-decoration-none small">Accommodation</a></li>
-            <li><a href="dining.html" class="text-white-50 text-decoration-none small">Restaurant</a></li>
-            <li><a href="#" class="text-white-50 text-decoration-none small">Spa</a></li>
-            <li><a href="contact.html" class="text-white-50 text-decoration-none small">Transfers</a></li>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </div>
-
+        <div class="col-6 col-lg-2">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="rooms.html">Accommodation</a></li>
+            <li><a href="dining.html">Restaurant</a></li>
+            <li><a href="#">Spa</a></li>
+            <li><a href="contact.html">Transfers</a></li>
+          </ul>
+        </div>
         <div class="col-12 col-lg-4">
-          <h6 class="text-uppercase text-warning fw-bold small">Find Us</h6>
-          <ul class="list-unstyled mt-2">
-            <li class="text-white-50 small mb-1">
-              <i class="bi bi-geo-alt-fill text-warning me-2"></i>Matundu Lane, Westlands, Nairobi
-            </li>
-            <li class="text-white-50 small mb-1">
-              <i class="bi bi-telephone-fill text-warning me-2"></i>+254 794107388
-            </li>
-            <li class="text-white-50 small">
-              <i class="bi bi-envelope-fill text-warning me-2"></i>hello@hotelnoir.co.ke
-            </li>
-          </ul>
+          <h5>Find Us</h5>
+          <p><i class="bi bi-geo-alt-fill me-2" style="color: var(--color-gold);"></i>Matundu Lane, Westlands, Nairobi</p>
+          <p><i class="bi bi-telephone-fill me-2" style="color: var(--color-gold);"></i>+254 794107388</p>
+          <p><i class="bi bi-envelope-fill me-2" style="color: var(--color-gold);"></i>hello@hotel.noir£.co.ke</p>
         </div>
-
       </div>
-
-      <hr class="border-secondary mt-4" />
-      <p class="text-white-50 small text-center mb-0">
-        &copy; 2026 Hotel Noir£ Grand. All rights reserved.
-      </p>
-
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <p class="mb-0">&copy; 2026 Hotel Noir£ Grand. All rights reserved.</p>
+      </div>
     </div>
   </footer>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/main.js"></script>
