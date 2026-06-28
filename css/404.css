@@ -1,0 +1,73 @@
+.not-found-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem;
+}
+/*Large number for 404 error with gradient text effect*/
+.not-found-number {
+  font-family: var(--font-display);
+  font-size: clamp(6rem, 20vw, 12rem);
+  font-weight: 700;
+  /* Gradient text using background-clip trick */
+  background: linear-gradient(135deg, var(--color-forest), var(--color-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  /*letter spacing*/
+  letter-spacing: -0.02em;
+}
+
+.not-found-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  color: var(--color-forest);
+}
+
+.not-found-message {
+  font-size: 1rem;
+  color: #5a5a5a;
+  max-width: 500px;
+  margin: 1rem auto 0;
+  font-weight: 300;
+  line-height: 1.7;
+}
+/*Navigation Links for 404 Page*/
+.not-found-links__label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+/*Auto-Redirect Notice*/
+.not-found-redirect {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.not-found-redirect strong {
+  color: var(--color-gold);
+}
+
+.not-found-redirect a {
+  color: var(--color-forest);
+  font-weight: 600;
+}
+
+.not-found-redirect a:hover {
+  color: var(--color-gold);
+}
+
+/*Dark mode adjustments for 404 page*/
+body.dark-mode .not-found-heading {
+  color: var(--color-ivory);
+}
+
+body.dark-mode .not-found-message {
+  color: #9a9590;
+}
