@@ -33,12 +33,12 @@
   background-color: var(--color-forest);
   color: var(--color-white);
 }
-.room-card__img--classic  { background: linear-gradient(135deg, #4a7a5e, #8faf93); }
-.room-card__img--classic2 { background: linear-gradient(135deg, #3d7a60, #adc9b0); }
-.room-card__img--deluxe   { background: linear-gradient(135deg, #1b3a2d, #4a7a5e); }
-.room-card__img--deluxe2  { background: linear-gradient(135deg, #2d5a43, #1b3a2d); }
-.room-card__img--junior   { background: linear-gradient(135deg, #6b5a3e, #c9a84c); }
-.room-card__img--suite    { background: linear-gradient(135deg, #c9a84c, #e8c96a); }
+.room-card__img--classic  { background: url('../images/room-classic.jpg') center center / cover no-repeat;} 
+.room-card__img--classic2 { background: url('../images/room-classic.2.jpg') center center / cover no-repeat;}
+.room-card__img--deluxe   { background: url('../images/room-deluxe.jpg') center center / cover no-repeat;}
+.room-card__img--deluxe2  { background: url('../images/room-deluxe.2.jpg') center center / cover no-repeat;}
+.room-card__img--junior   { background: url('../images/room-junior.jpg') center center / cover no-repeat;}
+.room-card__img--suite    { background: url('../images/room-suite.jpg') center center / cover no-repeat;}
 
 
 [class^="room-card__img"] {

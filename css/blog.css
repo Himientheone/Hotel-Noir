@@ -18,12 +18,12 @@
   width: 100%;
 }
 
-.blog-card__img--1 { background: linear-gradient(135deg, #1b3a2d, #8faf93); }
-.blog-card__img--2 { background: linear-gradient(135deg, #5c3a1a, #c9a84c); }
-.blog-card__img--3 { background: linear-gradient(135deg, #3a2a1a, #7a6a3a); }
-.blog-card__img--4 { background: linear-gradient(135deg, #1a2a3a, #3a6a8f); }
-.blog-card__img--5 { background: linear-gradient(135deg, #3a1a3a, #8f4a7a); }
-.blog-card__img--6 { background: linear-gradient(135deg, #1a3a1a, #4a8f4a); }
+.blog-card__img--1 { background: url('../images/nairobi.jpg') center center / cover no-repeat;}
+.blog-card__img--2 { background: url('../images/kiambu-coffee.jpg') center center / cover no-repeat;}
+.blog-card__img--3 { background: url('../images/renovation.jpg') center center / cover no-repeat;}
+.blog-card__img--4 { background: url('../images/packing.jpg') center center / cover no-repeat;}
+.blog-card__img--5 { background: url('../images/botanicals.jpg') center center / cover no-repeat;}
+.blog-card__img--6 { background: url('../images/solar.jpg') center center / cover no-repeat;}
 
 
 .blog-meta {

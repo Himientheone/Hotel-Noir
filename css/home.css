@@ -1,20 +1,12 @@
 .hero {
   position: relative;
   min-height: 92vh;
-  background: linear-gradient(
-      135deg,
-      #1b3a2d 0%,
-      #2d5a43 40%,
-      #3d7a60 70%,
-      #1b3a2d 100%
-    );
+  background: url('../images/hotel-lobby.jpg') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
-
-
 .hero__overlay {
   position: absolute;
   inset: 0;
@@ -150,15 +142,15 @@
 }
 
 .room-card__img--classic {
-  background: linear-gradient(135deg, #4a7a5e, #8faf93);
+  background: url('../images/room-classic.jpg') center center / cover no-repeat;
 }
 
 .room-card__img--deluxe {
-  background: linear-gradient(135deg, #1b3a2d, #4a7a5e);
+  background: url('../images/room-deluxe.jpg') center center / cover no-repeat;
 }
 
 .room-card__img--suite {
-  background: linear-gradient(135deg, #c9a84c, #e8c96a);
+  background: url('../images/room-suite.jpg') center center / cover no-repeat;
 }
 
 .room-badge {

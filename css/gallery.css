@@ -12,18 +12,18 @@
   transform: scale(1.02);
 }
 
-.gallery-thumb--1  { background: linear-gradient(135deg, #4a7a5e, #8faf93); }
-.gallery-thumb--2  { background: linear-gradient(135deg, #1b3a2d, #4a7a5e); }
-.gallery-thumb--3  { background: linear-gradient(135deg, #c9a84c, #e8c96a); }
-.gallery-thumb--4  { background: linear-gradient(135deg, #3d7a60, #adc9b0); }
-.gallery-thumb--5  { background: linear-gradient(135deg, #3b2a1a, #7a5c3a); }
-.gallery-thumb--6  { background: linear-gradient(135deg, #7a3a1a, #c96a2a); }
-.gallery-thumb--7  { background: linear-gradient(135deg, #1a1a3a, #3a3a7a); }
-.gallery-thumb--8  { background: linear-gradient(135deg, #3a2a1a, #c9a84c); }
-.gallery-thumb--9  { background: linear-gradient(135deg, #e8d5c0, #c9a884); }
-.gallery-thumb--10 { background: linear-gradient(135deg, #1a3a4a, #3a7a8f); }
-.gallery-thumb--11 { background: linear-gradient(135deg, #2a1a0a, #4a3a2a); }
-.gallery-thumb--12 { background: linear-gradient(135deg, #1b3a2d, #8faf93); }
+.gallery-thumb--1  { background: url('../images/room-classic.jpg') center center / cover no-repeat;} 
+.gallery-thumb--2  { background: url('../images/room-classic.2.jpg') center center / cover no-repeat;} 
+.gallery-thumb--3  { background: url('../images/room-deluxe.jpg') center center / cover no-repeat;} 
+.gallery-thumb--4  { background: url('../images/room-deluxe.2.jpg') center center / cover no-repeat;} 
+.gallery-thumb--5  { background: url('../images/restaurant.jpg') center center / cover no-repeat;} 
+.gallery-thumb--6  { background: url('../images/restaurant-food.jpg') center center / cover no-repeat;} 
+.gallery-thumb--7  { background: url('../images/restaurant-terrace.jpg') center center / cover no-repeat;} 
+.gallery-thumb--8  { background: url('../images/bar.jpg') center center / cover no-repeat;} 
+.gallery-thumb--9  { background: url('../images/spa.jpg') center center / cover no-repeat;} 
+.gallery-thumb--10 { background: url('../images/botanicals.jpg') center center / cover no-repeat;} 
+.gallery-thumb--11 { background: url('../images/hotel-exterior.jpg') center center / cover no-repeat;} 
+.gallery-thumb--12 { background: url('../images/hotel-exterior.2.jpg') center center / cover no-repeat;} 
 
 /*Dark overlay that fades in on hover*/
 .gallery-thumb__overlay {
