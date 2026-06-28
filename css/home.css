@@ -1,11 +1,13 @@
-.hero {
+.hero {hero {
   position: relative;
   min-height: 92vh;
-  background: url('../images/hotel-lobby.jpg') center center / cover no-repeat;
+  background: url('../images/welcome.jpg') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+  
 }
 .hero__overlay {
   position: absolute;
@@ -124,7 +126,7 @@
   height: 360px;
   right: 0;
   top: 0;
-  background: linear-gradient(145deg, var(--color-forest), var(--color-sage));
+  background: url('../images/welcome.jpg') center center / cover no-repeat;
 }
 
 .welcome-img--accent {
@@ -132,7 +134,7 @@
   height: 200px;
   left: 0;
   bottom: 0;
-  background: linear-gradient(145deg, var(--color-gold), #e8c96a);
+  background: url('../images/hotel-lobby.jpg') center center / cover no-repeat;
   opacity: 0.6;
 }
 
